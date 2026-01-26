@@ -1,0 +1,9 @@
+.htpasswd           [33m (Status: 403)[0m [Size: 279]
+.hta                [33m (Status: 403)[0m [Size: 279]
+.htaccess           [33m (Status: 403)[0m [Size: 279]
+assets              [36m (Status: 301)[0m [Size: 317][34m [--> http://192.168.56.117/assets/][0m
+css                 [36m (Status: 301)[0m [Size: 314][34m [--> http://192.168.56.117/css/][0m
+images              [36m (Status: 301)[0m [Size: 317][34m [--> http://192.168.56.117/images/][0m
+index.html          [32m (Status: 200)[0m [Size: 46199]
+js                  [36m (Status: 301)[0m [Size: 313][34m [--> http://192.168.56.117/js/][0m
+server-status       [33m (Status: 403)[0m [Size: 279]
