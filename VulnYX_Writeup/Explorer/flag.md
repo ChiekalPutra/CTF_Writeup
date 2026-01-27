@@ -1,0 +1,5 @@
+User Flag:
+3f2580ab16ac82c9e0adaf0dad3a900d
+
+Root Flag:
+9a045d36c5a28f01784bdcfb326accfe
