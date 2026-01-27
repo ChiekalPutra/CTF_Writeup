@@ -1,6 +1,4 @@
-# This readme contain list of free learning material of many CTF's platfrom
-
-# This list will add more platfrom as i find the new one
+# This readme contain list of free learning material of many CTF's platfrom. This list will add more platfrom as i find the new one
 
 # HAPPY HACKING !
 
