@@ -1,25 +1,23 @@
-# This readme contain list of free learning material of many CTF's platfrom. This list will add more platfrom as i find the new one
+# File readme ini berisi daftar materi pembelajaran gratis dari berbagai platform CTF. Daftar ini akan bertambah dengan platform baru seiring berjalannya waktu. HAPPY HACKING !
 
-# HAPPY HACKING !
+## Platfrom Boot To Root
 
-## Boot To Root platfrom
-
-- vulnhub.com
-- hackmyvm.eu
-- vulnyx.com
+- [vulnhub.com](https://vulnhub.com)
+- [hackmyvm.eu](https://hackmyvm.eu)
+- [vulnyx.com](https://vulnyx.com)
 
 ## Web App
 
-- ctf.hacker.101.com (Part of hackerone platfrom)
-- juice-shop.herokuapp.com (Or download the file on github and install in local machine)
-- portswigger.net (Portswigger academy)
-- overthewire.org/natas
-- DVWA (Damn Vulnerable Web Application)
+- [ctf.hacker101.com](https://ctf.hacker101.com)
+- [juice-shop.herokuapp.com](https://juice-shop.herokuapp.com)
+- [portswigger.net](https://portswigger.net)
+- [overthewire.org/natas](https://overthewire.org/natas)
+- [GitHub - digininja/DVWA: Damn Vulnerable Web Application (DVWA)](https://github.com/digininja/DVWA)
 
-## Everything at one place
+## CTF Berdasarkan Kategori
 
-- picoCTF.org
-- root-me-org
-- ctf.ariaf.my.id (Indonesian)
-- pwn.college
-- echoctf.red
+- [picoCTF.org](https://picoctf.org)
+- [root-me-org](https://root-me-org)
+- [ctf.ariaf.my.id](https://ctf.ariaf.my.id)
+- [pwn.college](https://pwn.college)
+- [echoctf.red](https://echoctf.red)
