@@ -17,7 +17,7 @@
 
 ## Server HTTP / Port 80
 
-![](file:///home/kal/Documents/Pentest/Vulnhub_Writeup/Done/Blogger/img/web.png?msec=1769584939190)
+![](img/web.png?msec=1769584939190)
 
 ## Enumerasi Web
 
@@ -36,15 +36,15 @@ gobuster dir -w your_wordlist.txt -u http://<YOUR_MACHINE_IP>/ -r html,php,txt -
 
 Didalam direktori /assets
 
-![](file:///home/kal/Documents/Pentest/Vulnhub_Writeup/Done/Blogger/img/assets.png?msec=1769584939075)
+![](img/assets.png?msec=1769584939075)
 
 Saat menjelajahi direktori font, saya menemukan direktori lain bernama blog.
 
-![](file:///home/kal/Documents/Pentest/Vulnhub_Writeup/Done/Blogger/img/blog.png?msec=1769584939077)
+![](img/blog.png?msec=1769584939077)
 
 > Agar blog berfungsi, Anda perlu menambahkan blogger.thm ke /etc/hosts. (Baca deskripsi mesin blogger di Vulnhub)
 
-![](file:///home/kal/Documents/Pentest/Vulnhub_Writeup/Done/Blogger/img/blogger.png?msec=1769584939123)
+![](img/blogger.png?msec=1769584939123)
 
 ## File Upload Vulnerability
 
@@ -54,21 +54,21 @@ Mengklik salah satu artikel akan memberi kita URL ini.
 http://blogger.thm/assets/fonts/blog/?p=29
 ```
 
-Saat melihat ke bawah, saya menemukan bahwa kita bisa memberikan komentar dengan lampiran gambar.![](file:///home/kal/Documents/Pentest/Vulnhub_Writeup/Done/Blogger/img/upload.png?msec=1769584939078)
+Saat melihat ke bawah, saya menemukan bahwa kita bisa memberikan komentar dengan lampiran gambar.![](img/upload.png?msec=1769584939078)
 
 Setelah melihat ini, mungkin saya bisa mengunggah file PHP dan mendapatkan reverse shell? Payload yang saya gunakan dalam tulisan ini ada [di sini](https://github.com/pentestmonkey/php-reverse-shell), tetapi mengunggah file PHP tidak diizinkan. Saya mencoba mengubah format menjadi .jpg alih-alih .php dan jelas tidak berhasil.
 
 Jadi saya mencoba menambahkan header format GIF "GIF87a;" ke file PHP reverse shell dan sekarang file PHP berhasil diunggah.
 
-![](file:///home/kal/Documents/Pentest/Vulnhub_Writeup/Done/Blogger/img/uploaded.png?msec=1769584939078)
+![](img/uploaded.png?msec=1769584939078)
 
-Pada listener sekarang saya mendapatkan shell![](file:///home/kal/Documents/Pentest/Vulnhub_Writeup/Done/Blogger/img/Reverse_Shell.png?msec=1769584939079)
+Pada listener sekarang saya mendapatkan shell![](img/Reverse_Shell.png?msec=1769584939079)
 
-Saat memasuki direktori /home, saya melihat 3 pengguna yang tersedia.![](file:///home/kal/Documents/Pentest/Vulnhub_Writeup/Done/Blogger/img/user.png?msec=1769584939080)
+Saat memasuki direktori /home, saya melihat 3 pengguna yang tersedia.![](img/user.png?msec=1769584939080)
 
 flag user ada di folder James, tetapi ketika saya mencoba menampilkan isi user.txt, ini yang terjadi.
 
-![](file:///home/kal/Documents/Pentest/Vulnhub_Writeup/Done/Blogger/img/user_flag.png?msec=1769584939080)
+![](img/user_flag.png?msec=1769584939080)
 
 ## Mencari Jalan Keluar Dan Mendapatkan Akses Root
 
@@ -86,7 +86,7 @@ dan saya menemukan bahwa mesin ini menggunakan python3, jadi saya menjalankan sh
 python3 -c 'import pty; pty.spawn("/bin/bash")'
 ```
 
-![](file:///home/kal/Documents/Pentest/Vulnhub_Writeup/Done/Blogger/img/spawning_shell.png?msec=1769584939081)
+![](img/spawning_shell.png?msec=1769584939081)
 
 Kemudian saya mengubah variabel lingkungan TERM menjadi xterm untuk mendapatkan lingkungan shell lengkap.
 
@@ -96,15 +96,15 @@ export TERM=xterm
 
 Sekarang saya dapat menjalankan perintah `su` untuk mengakses salah satu dari tiga akun yang tersedia. Upaya login yang berhasil adalah 'vagrant' dengan kata sandi 'vagrant'.
 
-![](file:///home/kal/Documents/Pentest/Vulnhub_Writeup/Done/Blogger/img/vagrant.png?msec=1769584939082)
+![](img/vagrant.png?msec=1769584939082)
 
 Tapi saya masih belum bisa menampilkan isi file user.txt. Mungkin saya perlu menjadi root terlebih dahulu? Menjalankan perintah 'sudo -l' memberi saya ini.
 
-![](file:///home/kal/Documents/Pentest/Vulnhub_Writeup/Done/Blogger/img/sudo_l.png?msec=1769584939082)
+![](img/sudo_l.png?msec=1769584939082)
 
 Pada dasarnya, ini berarti saya dapat menjalankan apa pun dengan sudo tanpa perlu kata sandi, jadi saya mencoba menjalankan perintah cat yang sama tetapi dengan sudo.
 
-![](file:///home/kal/Documents/Pentest/Vulnhub_Writeup/Done/Blogger/img/user_flag_success.png?msec=1769584939083)
+![](img/user_flag_success.png?msec=1769584939083)
 
 > Decode flag dari base64 dan Anda akan mendapatkan flag tersebut.
 
