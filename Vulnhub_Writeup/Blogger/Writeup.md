@@ -1,6 +1,6 @@
-# Planet: Earth CTF
+# Blogger Writeup
 
-[vulnhub_link](https://www.vulnhub.com/entry/blogger-1,675/))
+[vulnhub_link](https://www.vulnhub.com/entry/blogger-1,675/)
 
 ## Mencari Alamat IP
 
@@ -109,5 +109,3 @@ Pada dasarnya, ini berarti saya dapat menjalankan apa pun dengan sudo tanpa perl
 > Decode flag dari base64 dan Anda akan mendapatkan flag tersebut.
 
 Sekarang untuk mendapatkan hak akses root, cukup tingkatkan hak akses pengguna menjadi root dengan perintah 'sudo su' dan akses direktori /root.
-
-![](img/root_flag.png)
