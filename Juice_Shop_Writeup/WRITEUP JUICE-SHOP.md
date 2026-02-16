@@ -12,7 +12,7 @@ Cara menyelesaikan :
   `http://127.0.0.1:8080/`
 
 - Akses robots.txt di `http://127.0.0.1:8080/robots.txt`
-  ![loading-ag-188](image/confidental_document/robots_txt.png)
+![loading-ag-188](image/confidental_document/robots_txt.png)
 
 - Akses folder `/ftp` di url juice shop, dan kembali ke halaman awal
 
@@ -23,7 +23,7 @@ Cara menyelesaikan :
 Cara menyelesaikan :
 
 - Akses menu chatbot pada juice shop
-  ![](image/Chatbot/Chatbot.png)
+![](image/Chatbot/Chatbot.png)
 
 - tanyakan terus mengenai coupon hingga chatbot memberikan kupon diskon
-  ![](image/Chatbot/rest_chatbot_response_fin_response.png)
+![](image/Chatbot/rest_chatbot_response_fin_response.png)
