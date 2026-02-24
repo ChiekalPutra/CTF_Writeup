@@ -10,22 +10,13 @@
 - [Evilbox-One](https://www.vulnhub.com/entry/evilbox-one,736/)
 - [Planet: Earth](https://www.vulnhub.com/entry/the-planets-earth,755/)
 - [blogger: 1 ~ VulnHub](https://www.vulnhub.com/entry/blogger-1,675/)
+- [Lazysysadmin: 1](https://www.vulnhub.com/entry/lazysysadmin-1,205/)
 
 # List Of Machine I've Done
 
 1. Moneybox
-  
 2. Evilbox
-  
 3. Planet : Earth
-  
 4. Blogger
+5. Lazysysadmin: 1
   
-
-# TODO
-
-- [x] Writeup for blogger 1 machine
-  
-- [ ] Finish mrRobot machine
-  
-- [ ] Finish Stapler machine
