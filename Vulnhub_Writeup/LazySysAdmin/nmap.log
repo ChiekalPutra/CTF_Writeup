@@ -1,0 +1,52 @@
+# Nmap 7.92 scan initiated Tue Feb 24 16:11:05 2026 as: nmap -sCV -p- -oN nmap.log --min-rate 5000 192.168.56.125
+Nmap scan report for 192.168.56.125
+Host is up (0.0016s latency).
+Not shown: 65529 closed tcp ports (conn-refused)
+PORT     STATE SERVICE     VERSION
+22/tcp   open  ssh         OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   1024 b5:38:66:0f:a1:ee:cd:41:69:3b:82:cf:ad:a1:f7:13 (DSA)
+|   2048 58:5a:63:69:d0:da:dd:51:cc:c1:6e:00:fd:7e:61:d0 (RSA)
+|   256 61:30:f3:55:1a:0d:de:c8:6a:59:5b:c9:9c:b4:92:04 (ECDSA)
+|_  256 1f:65:c0:dd:15:e6:e4:21:f2:c1:9b:a3:b6:55:a0:45 (ED25519)
+80/tcp   open  http        Apache httpd 2.4.7 ((Ubuntu))
+|_http-server-header: Apache/2.4.7 (Ubuntu)
+|_http-title: Backnode
+| http-robots.txt: 4 disallowed entries 
+|_/old/ /test/ /TR2/ /Backnode_files/
+|_http-generator: Silex v2.2.7
+139/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+3306/tcp open  mysql       MySQL (unauthorized)
+6667/tcp open  irc         InspIRCd
+| irc-info: 
+|   server: Admin.local
+|   users: 1
+|   servers: 1
+|   chans: 0
+|   lusers: 1
+|   lservers: 0
+|   source ident: nmap
+|   source host: 192.168.56.1
+|_  error: Closing link: (nmap@192.168.56.1) [Client exited]
+Service Info: Hosts: LAZYSYSADMIN, Admin.local; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_clock-skew: mean: -2s, deviation: 0s, median: -2s
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+|_nbstat: NetBIOS name: LAZYSYSADMIN, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+|_smb-os-discovery: ERROR: Script execution failed (use -d to debug)
+| smb2-time: 
+|   date: 2026-02-24T09:11:19
+|_  start_date: N/A
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled but not required
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Feb 24 16:11:30 2026 -- 1 IP address (1 host up) scanned in 25.75 seconds

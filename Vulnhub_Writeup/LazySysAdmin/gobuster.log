@@ -1,0 +1,26 @@
+.hta.php            [33m (Status: 403)[0m [Size: 289]
+.hta                [33m (Status: 403)[0m [Size: 285]
+.hta.html           [33m (Status: 403)[0m [Size: 290]
+.htaccess           [33m (Status: 403)[0m [Size: 290]
+.hta.txt            [33m (Status: 403)[0m [Size: 289]
+.htaccess.html      [33m (Status: 403)[0m [Size: 295]
+.htaccess.php       [33m (Status: 403)[0m [Size: 294]
+.htaccess.txt       [33m (Status: 403)[0m [Size: 294]
+.htpasswd.html      [33m (Status: 403)[0m [Size: 295]
+.htpasswd           [33m (Status: 403)[0m [Size: 290]
+.htpasswd.php       [33m (Status: 403)[0m [Size: 294]
+.htpasswd.txt       [33m (Status: 403)[0m [Size: 294]
+apache              [36m (Status: 301)[0m [Size: 316][34m [--> http://192.168.56.125/apache/][0m
+index.html          [32m (Status: 200)[0m [Size: 36072]
+index.html          [32m (Status: 200)[0m [Size: 36072]
+javascript          [36m (Status: 301)[0m [Size: 320][34m [--> http://192.168.56.125/javascript/][0m
+info.php            [32m (Status: 200)[0m [Size: 77176]
+info.php            [32m (Status: 200)[0m [Size: 77176]
+old                 [36m (Status: 301)[0m [Size: 313][34m [--> http://192.168.56.125/old/][0m
+phpmyadmin          [36m (Status: 301)[0m [Size: 320][34m [--> http://192.168.56.125/phpmyadmin/][0m
+robots.txt          [32m (Status: 200)[0m [Size: 92]
+robots.txt          [32m (Status: 200)[0m [Size: 92]
+server-status       [33m (Status: 403)[0m [Size: 294]
+test                [36m (Status: 301)[0m [Size: 314][34m [--> http://192.168.56.125/test/][0m
+wordpress           [36m (Status: 301)[0m [Size: 319][34m [--> http://192.168.56.125/wordpress/][0m
+wp                  [36m (Status: 301)[0m [Size: 312][34m [--> http://192.168.56.125/wp/][0m
