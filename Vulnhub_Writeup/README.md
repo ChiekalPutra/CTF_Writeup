@@ -11,6 +11,7 @@
 - [Planet: Earth](https://www.vulnhub.com/entry/the-planets-earth,755/)
 - [blogger: 1 ~ VulnHub](https://www.vulnhub.com/entry/blogger-1,675/)
 - [Lazysysadmin: 1](https://www.vulnhub.com/entry/lazysysadmin-1,205/)
+- [Basic Pentesting: 1](https://www.vulnhub.com/entry/basic-pentesting-1,216/)
 
 # List Of Machine I've Done
 
