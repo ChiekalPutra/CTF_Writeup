@@ -12,6 +12,7 @@
 - [blogger: 1 ~ VulnHub](https://www.vulnhub.com/entry/blogger-1,675/)
 - [Lazysysadmin: 1](https://www.vulnhub.com/entry/lazysysadmin-1,205/)
 - [Basic Pentesting: 1](https://www.vulnhub.com/entry/basic-pentesting-1,216/)
+- [Basic Pentesting: 2](https://www.vulnhub.com/entry/basic-pentesting-2,241/)
 
 # List Of Machine I've Done
 
@@ -20,4 +21,6 @@
 3. Planet : Earth
 4. Blogger
 5. Lazysysadmin: 1
+6. Basic Pentesting: 1
+7. Basic Pentesting: 2
   
